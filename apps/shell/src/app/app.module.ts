@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { loadRemoteModule } from '@nrwl/angular/mf';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
+    CoreModule,
     RouterModule.forRoot(
       [
         {
@@ -30,4 +32,4 @@ import { loadRemoteModule } from '@nrwl/angular/mf';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

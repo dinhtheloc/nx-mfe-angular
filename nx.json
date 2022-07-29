@@ -18,21 +18,14 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "OGY4ODhmNjUtNGQ4Zi00OGJjLWEyYzMtNDg0MDBlYTM0YTM4fHJlYWQtd3JpdGU="
       }
     }
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     }
   },
   "generators": {
@@ -50,5 +43,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "mfe"
+  "defaultProject": "shell"
 }
