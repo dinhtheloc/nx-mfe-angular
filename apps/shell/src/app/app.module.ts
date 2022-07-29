@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
 import { loadRemoteModule } from '@nrwl/angular/mf';
-import { CoreModule } from './core/core.module';
+import { AppComponent } from './app.component';
+import { NxWelcomeComponent } from './nx-welcome.component';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
-    CoreModule,
     RouterModule.forRoot(
       [
         {
@@ -27,7 +25,7 @@ import { CoreModule } from './core/core.module';
         },
       ],
       { initialNavigation: 'enabledBlocking' }
-    ),
+    )
   ],
   providers: [],
   bootstrap: [AppComponent],
