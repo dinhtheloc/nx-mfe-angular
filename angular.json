@@ -2,7 +2,9 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "mfe": "apps/mfe",
-    "mfe-e2e": "apps/mfe-e2e"
+    "dashboard": "apps/dashboard",
+    "dashboard-e2e": "apps/dashboard-e2e",
+    "shell": "apps/shell",
+    "shell-e2e": "apps/shell-e2e"
   }
 }
